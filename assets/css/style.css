@@ -2,22 +2,255 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-
+body {
+    background-color: pink;
+    width: 100%;
+    height: 100000px;
+}
 /* header */
-.header {
-    background-color: blue;
+.header-page {
+    background-color: #FFFFFF;
     width: 100%;
     height: 118.4px;
+    position: sticky;
+    top: 0;
 }
 .top-header {
-    background-color: red;
+    background-color: #F7F7F7;
     width: 100%;
     height: 25px;
+    display: flex;
+    justify-content: center;
 }
-.searching-bar {
-    background-color: yellow;
+.top-link {
+    background-color: white;
+    width: 78%;
+    height: 25px;
+    display: flex;
+    justify-content:flex-end;
+}
+.top-link p, ul, ol {
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 3.1% ;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  /* link menu */
+.link-1 {
+    color: #FF00FE;
+    cursor: pointer;
+}
+.link-1:hover {
+    color: #F46D00;
+}
+.link-2 {
+    cursor: pointer;
+}
+.link-2:hover {
+    color: #F46D00;
+}
+.link-3 {
+    cursor: pointer;
+    color: #AA9E9E;
+}
+.link-3:hover {
+    color: #F46D00;
+}
+
+/* menu */
+.link-menu {
+    cursor: pointer;
+}
+.link-menu:hover {
+    color: #F46D00
+}
+.menu-all {
+    display: none;
+} 
+.link-menu:hover .menu-all{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    background-color: white;
+    /* margin-top: 94px;
+    margin-left: -525px; */
+    width: 13.79%;
+}
+
+.menu-1 p, .m1 {
+    display: inline;
+}
+.menu-2 p, .m2 {
+    display: inline;
+}
+.menu-1 {
+    position: relative;
+}
+.menu-1 .m1 {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    color: white;
+}
+.menu-1:hover .m1 {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    margin-top: -2px;
+    color: #F46D00;
+}
+.menu-2 .m2 {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    color: white;
+}
+.menu-2:hover .m2 {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    margin-top: -2px;
+    color: #F46D00;
+}
+   
+.menu-1j, .menu-2j {
+    border-left: solid 1px gray ;
+}
+.menu-1j {
+    display: none;
+} 
+.menu-1:hover .menu-1j {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    background-color: white;
+    margin-top: -50px;
+    margin-left: 203px;
+    width: 210px;
+    height: 300px;
+}
+.menu-2j {
+    display: none;
+} 
+.menu-2:hover .menu-2j {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    background-color: white;
+    margin-top: -75px;
+    margin-left: 203px;
+    width: 210px;
+    height: 300px;
+}
+
+/* searching-bar */
+.bottom-header {
+    background-color: #FFFFFF;
     width: 100%;
     height: 75px;
-    padding-top: 11px;
+    padding: 11px 0 0;
+    padding-left: 10.84%;
+}
+.inside-bottom-header {
+    display: flex;
+    width: 87.8%;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo {
+    height: 40px;
+    margin-top: 6px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+/* bar */
+.bar {
+    height: 45px;
+    width: 688px;
+    background-color: #EFF0F5;
+    display: flex;
+    position: relative;
+    border-radius: 2px;
+}
+.bar input {
+    font-size: 14px;
+    color: #9E9E9E;
+}
+.search-bar {
+    margin: 13px 19px;
+    width: 100%;
+    border: none;
+    background-color: #EFF0F5;
+}
+.search-icon {
+    height: 45px;
+    width: 45px;
+    background-color: #F57224;
+    position: absolute;
+    right: 0px;
+    border-radius: 0 2px 2px 0 ;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-icon i {
+    font-size: 20px;
+    color: white;
+}
+
+/* cart icon */
+.cart i {
+    font-size: 27px;
+    margin-top: 14px;
+    transform: translateX(-9px) ;
+    cursor: pointer;
+}
+
+/* adpic */
+.adpic {
+    height: 45.7px;
+    cursor: pointer;
+}
+
+
+/* body page */
+.body-page {
+   width: 100%;
+   height: 10000px;
+   margin: auto;
+   background-color: blue;
+}
+.advertise {
+    width: 100%%;
+    height: 344px;
+    background-color: #E7E8EC;
+}
+.ad-content {
+    width: 79.4%;
+    height: 344px;
+    background-color: #E7E8EC;
+    margin: auto;
+}
+.ad-content img {
+    height: 344px;
+}
+.ad-1 {
+    height: 72px;
+    background-color: yellow;
+    padding-top: 12px;
+}
+.ad-1.1 {
+    height: 60px;
+    background-color: red; 
 }
